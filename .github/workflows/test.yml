@@ -19,9 +19,23 @@ jobs:
       with:
         go-version: '1.19'
 
-    - name: Get dependencies
+    - name: Go Cache
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.cache/go-build
+          ~/go/pkg/mod
+        key: ${{ runner.os }}-go-${{ hashFiles('**/go.mod') }}
+        restore-keys: |
+          ${{ runner.os }}-go-
+
+    - name: Initialize Go Modules
       run: |
-        go get -v -t -d ./...
+        go mod init github.com/greenstorm5417/openai-assistants-go || true
+        go mod tidy
+
+    - name: Get dependencies
+      run: go get -v -t -d ./...
 
     - name: Run Tests
       run: go test -v ./...
