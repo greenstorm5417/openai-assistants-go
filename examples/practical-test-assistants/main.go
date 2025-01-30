@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/greenstorm5417/openai-assistants-go/internal/client"
+	"github.com/greenstorm5417/openai-assistants-go/client"
 	"github.com/greenstorm5417/openai-assistants-go/pkg/assistants"
 	"github.com/greenstorm5417/openai-assistants-go/pkg/types"
 )

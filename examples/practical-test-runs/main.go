@@ -8,7 +8,7 @@ import (
 
 	"encoding/json"
 
-	"github.com/greenstorm5417/openai-assistants-go/internal/client"
+	"github.com/greenstorm5417/openai-assistants-go/client"
 	"github.com/greenstorm5417/openai-assistants-go/pkg/assistants"
 	"github.com/greenstorm5417/openai-assistants-go/pkg/messages"
 	"github.com/greenstorm5417/openai-assistants-go/pkg/runs"

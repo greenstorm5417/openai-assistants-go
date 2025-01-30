@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"net/http/httptest"
 
-	"github.com/greenstorm5417/openai-assistants-go/internal/client"
+	"github.com/greenstorm5417/openai-assistants-go/client"
 
 	"testing"
 )

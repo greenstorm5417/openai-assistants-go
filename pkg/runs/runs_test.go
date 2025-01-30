@@ -6,7 +6,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/greenstorm5417/openai-assistants-go/internal/client"
+	"github.com/greenstorm5417/openai-assistants-go/client"
 )
 
 func TestCreateRun(t *testing.T) {
