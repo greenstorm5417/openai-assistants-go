@@ -5,7 +5,7 @@ This package provides a Go client for the OpenAI Messages API. Messages are the 
 ## Installation
 
 ```bash
-go get github.com/workspace
+go get github.com/greenstorm5417/openai-assistants-go
 ```
 
 ## Quick Start
